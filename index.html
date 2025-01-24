@@ -8,7 +8,6 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <style>
-    /* Custom styles for the pop-up modal */
     .modal {
       display: none;
       position: fixed;
@@ -32,8 +31,7 @@
       border-radius: 8px;
       object-fit: contain;
     }
-
-    /* Fixed aspect ratio for carousel images */
+    
     .carousel img {
       width: 300px;
       height: 300px;
@@ -46,7 +44,6 @@
       transform: scale(1.05);
     }
 
-    /* Sticky header */
     header {
       position: sticky;
       top: 0;
@@ -54,7 +51,6 @@
       backdrop-filter: blur(10px);
     }
 
-    /* Hamburger menu */
     #menu {
       display: none;
     }
@@ -63,28 +59,22 @@
       display: flex;
     }
 
-    /* Hide scrollbar but allow scrolling */
     .carousel {
       overflow-x: auto;
       scrollbar-width: none;
-      /* Firefox */
       -ms-overflow-style: none;
-      /* IE and Edge */
+      
     }
 
     .carousel::-webkit-scrollbar {
       display: none;
-      /* Chrome, Safari, and Opera */
     }
 
-    /* Footer */
     footer {
       background: rgba(17, 24, 39, 0.8);
-      /* Matching the dark theme */
       backdrop-filter: blur(10px);
     }
 
-    /* Glow effect for the contact button */
     .glow-button {
       background: linear-gradient(45deg, #60a5fa, #3b82f6);
       box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
@@ -96,7 +86,6 @@
       transform: translateY(-2px);
     }
 
-    /* Add new glowing section styles */
     .section-glow {
       position: relative;
       overflow: hidden;
@@ -134,8 +123,7 @@
       position: relative;
       z-index: 1;
     }
-
-    /* Add these styles to your existing <style> section */
+    
     .carousel {
       background: rgba(17, 24, 39, 0.5);
       backdrop-filter: blur(10px);
@@ -144,7 +132,6 @@
       border: 1px solid rgba(255, 255, 255, 0.1);
     }
 
-    /* Update the carousel navigation buttons */
     .carousel-nav-button {
       background: rgba(59, 130, 246, 0.2);
       backdrop-filter: blur(4px);
@@ -221,9 +208,9 @@
       <div class="relative max-w-6xl mx-auto">
         <div class="carousel flex space-x-4 p-4">
           <!-- Logo Images -->
-          <img src="assets/logo.png" alt="Logo 1" class="cursor-pointer" onclick="openModal(this)">
-          <img src="assets/logo2.png" alt="Logo 2" class="cursor-pointer" onclick="openModal(this)">
-          <img src="assets/logo3.png" alt="Logo 3" class="cursor-pointer" onclick="openModal(this)">
+          <img src="logo.png" alt="Logo 1" class="cursor-pointer" onclick="openModal(this)">
+          <img src="logo2.png" alt="Logo 2" class="cursor-pointer" onclick="openModal(this)">
+          <img src="logo3.png" alt="Logo 3" class="cursor-pointer" onclick="openModal(this)">
         </div>
         <!-- Carousel Buttons -->
         <button class="absolute top-1/2 left-2 transform -translate-y-1/2 carousel-nav-button"
